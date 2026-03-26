@@ -21,6 +21,13 @@ class Task {
     nb, difficulty: nb%5, description: 'description $nb', color: Colors.red);
   }
 
+  factory Task.newTask_param(String title, List<String> tags, int nbhours, int difficulty, String description){
+    nb++; //attribut static de la classe.
+    return Task(id: nb, title: title, tags: ['tags $nb'], nbhours:
+    nbhours, difficulty: nbhours%5, description: description, color: Colors.red);
+  }
+
+
   static List<Task> generateTask(int i){
     List<Task> tasks=[];
     for(int n=0;n<i;n++){
