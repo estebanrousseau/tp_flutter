@@ -29,7 +29,7 @@ class TaskViewModel extends ChangeNotifier{
   TaskViewModel(){
     liste=[];
   }
-  void addTask(Task task){
+  void insertTask(Task task){
     liste.add(task);
     notifyListeners();
   }
